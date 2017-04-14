@@ -22,7 +22,8 @@ app.get('/api',function (req,res) {
             if (err)
                 console.log('error:', err);
             else
-                res.send({Spanish : translation});
+                //var ans=tran.word_count;
+                res.send(translation['translations'][0].translation);
         });
 
 
